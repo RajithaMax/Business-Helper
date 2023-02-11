@@ -1,0 +1,246 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-outer {
+    background-color: white;
+    position: sticky;
+    z-index: 500;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+}
+
+.header-left, .header-right {
+    flex: 1;
+    padding: 0 13px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left > .logo {
+    height: 50px;
+}
+
+/** =========Nav bar==========*/
+.header-right > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-right > ul > li {
+    margin-right: 8px;
+    border-bottom: 3px solid transparent;
+    padding: 5px 15px;
+}
+
+.header-right > ul > li:last-child {
+    margin-right: 0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right > ul > li > a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.header-right > ul > li:hover {
+    border-bottom: 3px solid #d35400;
+    cursor: pointer;
+}
+
+/** =========Nav bar==========*/
+
+/** =========slider==========*/
+.slider-main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-photo/male-female-business-people-working-tablet-office_1303-22848.jpg?w=740&t=st=1674900001~exp=1674900601~hmac=c705fcd94899b8a68206c3d69ba158176ad57201e8f0a0625273a42351b9f10a');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.slider-box {
+    width: 450px;
+    height: auto;
+    background-color: #16a085;
+    padding: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+}
+
+.slider-header-text {
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.slider-para {
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.slider-button {
+    border-radius: 50px;
+    padding: 8px 20px;
+    background: none;
+    border: 1px solid white;
+    color: white
+}
+
+/** =========slider==========*/
+
+/** =========about==========*/
+.about-main-outer {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.about-main-inner {
+    width: 80%;
+    height: auto;
+    position: relative;
+}
+
+.about-desc-outer {
+    width: 75%;
+    height: auto;
+    margin-top: 50px;
+    position: absolute;
+    right: 100px;
+    display: flex;
+}
+
+.about-desk-left, .about-desk-rigth {
+    flex: 1;
+    height: 500px;
+}
+
+.about-desk-left {
+    background-image: url('https://img.freepik.com/free-photo/portrait-woman-customer-service-worker_144627-37942.jpg?w=360&t=st=1674903279~exp=1674903879~hmac=63aabaae38eb126a8e410108fff5117109883050e858198c1001d18ecc5480bc');
+    background-size: cover;
+    background-position: top;
+}
+
+.about-desk-rigth {
+    margin-top: 70px;
+    background-color: #ecf0f1;
+}
+
+.decerator {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: #f1c40f;
+    border-radius: 100%;
+    top: 110px;
+    right: 2px;
+}
+
+/** =========about==========*/
+
+/*.outer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+/** =========Service==========*/
+#services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #193EB8;
+    padding: 50px 0px;
+}
+
+.service-inner {
+    width: 85%;
+    height: auto;
+}
+
+.what-we-do {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.para-service {
+    color: white;
+    text-align: justify;
+}
+
+.box-wrapper {
+    width: 100%;
+    height: 250px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-inner {
+    height: 100%;
+    width: 22% !important;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    border: 3px solid #193EB8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.box h3{
+    margin: 0;
+}
+.title{
+    margin-top: 50px;
+}
+.box-inner button{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #193EB8;
+    color: #193EB8;
+    cursor: pointer;
+    margin-top: 20px;
+}
+/** =========Service==========*/
